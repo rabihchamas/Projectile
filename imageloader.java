@@ -9,7 +9,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javafx.scene.image.Image;
+//import javafx.scene.image.Image;
 import javax.imageio.ImageIO;
 
 public class imageloader {
