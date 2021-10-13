@@ -37,7 +37,7 @@ public class game implements Runnable {
     
      int x,y;
      double X,Y;
-     int v0=110, alpha=80;
+     double v0=110, alpha=80;
      double a =  Math.toRadians(alpha);
      double t=0;
      
@@ -47,8 +47,8 @@ public class game implements Runnable {
      int rx,ry;
       
      private void target(){
-        rx=(int) (Math.random() * 500)+10;
-        ry=(int) (Math.random() * 500)+10;
+        rx=(int) 510;
+        ry=(int) 510;
       
      }
      
@@ -78,7 +78,7 @@ public class game implements Runnable {
         
         g.fillOval(x, y, 20, 20);
         g.drawRect(rx,ry,40,40);
-        if(x>1000 || y>640){
+     if((x > rx-15 && x < rx+15) && (y>ry-15 && y < ry +15) ){
         
             t-=0.1;
             
